@@ -58,7 +58,7 @@ bot.on('ready', () => {
     console.log('I am ready, online!')
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
-        bot.user.setActivity(activities_list[index]);
+        bot.user.setActivity(activities_list[index], {type: "WATCHING"});
     }, 10000);
 });
 
@@ -80,7 +80,10 @@ bot.on('message', msg => {
         }
 
         }else {
-            msg.channel.send("You don't have access to this bot commands!");
+            let embed = new Discord.RichEmbed()
+            .setDescription("You don't have access to this bot commands!")
+            .setColor('#ff0000');
+            msg.channel.send(embed);
         }    
     }
 });

@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
                 .setDescription(role + ' is already added!')
                 .setColor("#ff0000");
                 message.channel.send(embed)
-                return;
+                return; 
             }
         }
 

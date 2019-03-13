@@ -45,7 +45,7 @@ module.exports.run = async (bot, message, args) => {
         .setDescription("Type your Bus Paths here by putting the start of the bus path and the end / last stop location. Ex: junk lazy")
         .addField("Hosted By", `${message.author}`, true)
         .addField("Gamemode", gamemode, true)
-        .setFooter("Sentinel Elite / made by Genetiic#6263", "https://images-ext-1.discordapp.net/external/7Gb8keZPvsVq6ShcXaunMBSClTYZCJvnGRDwkK5Utzc/https/cdn.discordapp.com/attachments/519147048126119937/529834061720715290/LUIGI5ewn_logo.png")
+        .setFooter(`${message.guild.name} / dev: Genetiicツ#6263 `, "https://images-ext-1.discordapp.net/external/7Gb8keZPvsVq6ShcXaunMBSClTYZCJvnGRDwkK5Utzc/https/cdn.discordapp.com/attachments/519147048126119937/529834061720715290/LUIGI5ewn_logo.png")
     
     message.channel.send({embed: startMessage});    
  
