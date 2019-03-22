@@ -35,6 +35,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(role + ' is now added!')
             .setColor('#15ff00')
             message.channel.send(embed)
+            return;
         }
     }
 
