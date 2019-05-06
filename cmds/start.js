@@ -5,7 +5,7 @@ const settings = require('./../settings.json');
 const owner = settings.owner;
 
 module.exports.run = async (bot, message, args) => {
-    let voiceChannelID = "508037619699941386";
+    let voiceChannelID = "573674278117965825"
     let voice_channel = message.guild.channels.get(voiceChannelID);
     let members = message.guild.channels.get(voiceChannelID).members.size;
     let snipeChannel = message.channel;
