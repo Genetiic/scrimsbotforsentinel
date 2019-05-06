@@ -48,10 +48,10 @@ let validation = function(serverRoles, userRoles){
 }
 
 const activities_list = [ 
-    "BC SCRIMS",
-    "BOTCORD", 
-    "BC SCRIMS",
-    "BOTCORD"
+    "Sentinel Scrims",
+    "Sentinel Elite", 
+    "Sentinel Scrims",
+    "Sentinel Elite"
     ];
 
 bot.on('ready', () => {
