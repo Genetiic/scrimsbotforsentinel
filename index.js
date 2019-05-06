@@ -48,17 +48,17 @@ let validation = function(serverRoles, userRoles){
 }
 
 const activities_list = [ 
-    "SCRIMS",
-    "FORTNITE", 
-    "SCRIMS",
-    "FORTNITE"
+    "Sentinel Scrims",
+    "Sentinel Elite", 
+    "Sentinel Scrims",
+    "Sentinel Elite"
     ];
 
 bot.on('ready', () => {
     console.log('I am ready, online!')
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
-        bot.user.setActivity(activities_list[index], {type: "PLAYING"});
+        bot.user.setActivity(activities_list[index], {type: "WATCHING"});
     }, 10000);
 });
 
