@@ -104,7 +104,7 @@ module.exports.run = async (bot, message, args) => {
  
        
         if (validation(allowedRoles.roles,m.member.roles.array()) || m.member.id === owner){
-            if (m.content === "/start" || m.content === "/stop"){
+            if (m.content === "n!start" || m.content === "n!stop"){
                 collector.stop();
                 console.log("Collector stopped");
                 return;

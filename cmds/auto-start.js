@@ -48,11 +48,11 @@ module.exports.run = async (bot, message, args) => {
                 console.log(err);
             });
 
-            bot.guilds.get(message.guild.id).channels.get(codes).send("/count").catch((err) => {
+            bot.guilds.get(message.guild.id).channels.get(codes).send("n!count").catch((err) => {
                 console.log(err);
             });
 
-            bot.guilds.get(message.guild.id).channels.get(codes).send("/start").catch((err) => {
+            bot.guilds.get(message.guild.id).channels.get(codes).send("n!start").catch((err) => {
                 console.log(err);
             });
         }
