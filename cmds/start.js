@@ -46,7 +46,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Hosted By", `${message.author}`, true)
         .addField("Gamemode", gamemode, true)
         .addField("Game ", "FORTNITE", true)
-        .setFooter(`${message.guild.name} / dev: Genetiicツ#6263 `, "https://cdn.discordapp.com/attachments/519147048126119937/529834061720715290/LUIGI5ewn_logo.png")
+        .setFooter(`${message.guild.name} / dev: Genetiicツ#6263 `, "https://cdn.discordapp.com/attachments/564622782139465732/597973707801231360/IMG_0210.JPG")
     
     message.channel.send({embed: startMessage});    
  
@@ -137,7 +137,7 @@ module.exports.run = async (bot, message, args) => {
         let str = " ";
         last3 = new Discord.RichEmbed()
         .setTitle ("Bus Paths")
-        .setThumbnail('https://cdn.discordapp.com/attachments/519147048126119937/529834061720715290/LUIGI5ewn_logo.png')
+        .setThumbnail('https://cdn.discordapp.com/attachments/564622782139465732/597973707801231360/IMG_0210.JPG')
         .setColor("#ff2658")
  
         let playerCount = 0;
@@ -150,7 +150,7 @@ module.exports.run = async (bot, message, args) => {
                 str += game.data[i].users[j] + "\n";
             }
             last3.addField(`${game.data[i].id.toUpperCase()} - ${game.data[i].users.length} PLAYERS`, str, true);
-            last3.setFooter(`${game.data.length} Responses | ${playerCount} Players | ${members} Players In ${voice_channel.name}`, "https://cdn.discordapp.com/attachments/519147048126119937/529834061720715290/LUIGI5ewn_logo.png")
+            last3.setFooter(`${game.data.length} Responses | ${playerCount} Players | ${members} Players In ${voice_channel.name}`, "https://cdn.discordapp.com/attachments/564622782139465732/597973707801231360/IMG_0210.JPG")
         }
             editLast3.edit({embed: last3}).catch((err) => {
                 console.log("Caught edit error");
@@ -170,7 +170,7 @@ module.exports.run = async (bot, message, args) => {
         let endMessage = new Discord.RichEmbed()
         .setTitle("No more Bus Paths accepted at this point")
         .setDescription("Good luck and have fun in your game!")
-        .setFooter(`Use code: SMB_Luigi5ewn in the item shop!`)
+        .setFooter(`${message.guild.name}`)
         .setColor("#ff0000");
  
         message.channel.send({embed: endMessage});
