@@ -46,7 +46,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Hosted By", `${message.author}`, true)
         .addField("Gamemode", gamemode, true)
         .addField("Game ", "FORTNITE", true)
-        .setFooter(`${message.guild.name} / dev: Genetiicツ#6263 `, "https://cdn.discordapp.com/attachments/564622782139465732/597973707801231360/IMG_0210.JPG")
+        .setFooter(`${message.guild.name} / dev: Genetiicツ#6263 `, "https://cdn.discordapp.com/attachments/519147048126119937/529834061720715290/LUIGI5ewn_logo.png")
     
     message.channel.send({embed: startMessage});    
  
@@ -137,7 +137,7 @@ module.exports.run = async (bot, message, args) => {
         let str = " ";
         last3 = new Discord.RichEmbed()
         .setTitle ("Bus Paths")
-        .setThumbnail('https://cdn.discordapp.com/attachments/564622782139465732/597973707801231360/IMG_0210.JPG')
+        .setThumbnail('https://cdn.discordapp.com/attachments/519147048126119937/529834061720715290/LUIGI5ewn_logo.png')
         .setColor("#ff2658")
  
         let playerCount = 0;
@@ -150,7 +150,7 @@ module.exports.run = async (bot, message, args) => {
                 str += game.data[i].users[j] + "\n";
             }
             last3.addField(`${game.data[i].id.toUpperCase()} - ${game.data[i].users.length} PLAYERS`, str, true);
-            last3.setFooter(`${game.data.length} Responses | ${playerCount} Players | ${members} Players In ${voice_channel.name}`, "https://cdn.discordapp.com/attachments/564622782139465732/597973707801231360/IMG_0210.JPG")
+            last3.setFooter(`${game.data.length} Responses | ${playerCount} Players | ${members} Players In ${voice_channel.name}`, "https://cdn.discordapp.com/attachments/519147048126119937/529834061720715290/LUIGI5ewn_logo.png")
         }
             editLast3.edit({embed: last3}).catch((err) => {
                 console.log("Caught edit error");
