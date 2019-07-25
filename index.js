@@ -48,10 +48,10 @@ let validation = function(serverRoles, userRoles){
 }
 
 const activities_list = [ 
-    "ProCord Scrims",
-    "FNM ProCord", 
-    "ProCord Scrims",
-    "FNM ProCord"
+    "Sentinel Scrims",
+    "Sentinel Elite", 
+    "Sentinel Scrims",
+    "Sentinel Elite"
     ];
 
 bot.on('ready', () => {
