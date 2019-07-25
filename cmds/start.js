@@ -170,7 +170,7 @@ module.exports.run = async (bot, message, args) => {
         let endMessage = new Discord.RichEmbed()
         .setTitle("No more Bus Paths accepted at this point")
         .setDescription("Good luck and have fun in your game!")
-        .setFooter(`${message.guild.name}`)
+        .setFooter(`${message.guild.name} staff`)
         .setColor("#ff0000");
  
         message.channel.send({embed: endMessage});
